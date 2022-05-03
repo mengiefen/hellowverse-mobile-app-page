@@ -1,0 +1,38 @@
+@import '../../../sass/variables.module.scss';
+.container {
+  width: 100vw;
+  margin: 7.5rem 2rem 2rem 2rem;
+}
+
+.headerItems {
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.imgContainer {
+  overflow: hidden;
+  width: 100%;
+}
+
+.img {
+  border-radius: 10px;
+}
+
+.headerText {
+  color: $brand-color1;
+  padding: 1rem;
+  span {
+    font-size: min(36px, $extra-big);
+
+    letter-spacing: 1.5px;
+    &:last-child {
+      color: $brand-color2;
+    }
+  }
+}

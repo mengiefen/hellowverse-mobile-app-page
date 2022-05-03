@@ -1,0 +1,84 @@
+@import '../../../../sass/variables.module.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  overflow: hidden;
+}
+
+.dateWrapper {
+  align-self: flex-end;
+  align-items: center;
+  padding: 0.1rem 0.5rem;
+  margin-bottom: 1rem;
+  background-color: $brand-color1;
+  border-radius: 10px;
+  p {
+    color: $background-color;
+    font-weight: 600;
+  }
+}
+
+.quotesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quote {
+  color: $forground-color;
+
+  .quoteStarter {
+    padding: 0.5rem 0;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  blockquote {
+    margin-left: 1rem;
+    border-left: 7.5px $color2;
+    border-left-style: groove;
+    background-color: #efefef;
+    font-style: italic;
+    line-height: 1.5;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.tagWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+
+  p {
+    padding: 0.5rem 1rem;
+    background-color: $brand-color2;
+    color: $color2;
+    border-radius: 1rem;
+    font-weight: 500;
+  }
+}
+
+.linkWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    color: $brand-color1;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      color: $color2;
+      transform: translateY(0.5px);
+    }
+  }
+}

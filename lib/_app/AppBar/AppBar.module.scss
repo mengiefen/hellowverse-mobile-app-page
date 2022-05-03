@@ -1,0 +1,37 @@
+@import '../../../sass/variables.module.scss';
+.appBar {
+  background-color: $background-color;
+  padding: 0 2rem;
+  box-shadow: 0 -1px 10px 1px lightgrey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.appBarItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.searchInput {
+  padding: 0.5rem 1rem;
+  font-size: min(14px, $normal);
+  border-radius: 3px;
+  outline: none;
+  background-color: #fafafa;
+  border: 1.5px solid $brand-color2;
+  transition: border 0.3s;
+
+  &:hover,
+  &:focus {
+    border: 1.5px solid $brand-color1;
+  }
+}

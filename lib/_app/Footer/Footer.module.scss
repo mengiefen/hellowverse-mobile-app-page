@@ -1,0 +1,39 @@
+@import '../../../sass/variables.module.scss';
+
+.footer {
+  background-color: $background-color;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  border-top: 0.2px solid $brand-color2;
+}
+
+.footerDesc {
+  color: $forground-color;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+}
+
+.footerLogo {
+  width: 50%;
+  height: auto;
+}
+
+.footerContactUs {
+  color: $forground-color;
+  padding: 0.2rem 0.5rem;
+
+  border-radius: 2px;
+
+  a {
+    text-decoration: none;
+    color: $brand-color1;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $color2;
+    }
+  }
+}
